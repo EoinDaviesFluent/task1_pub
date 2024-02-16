@@ -3,7 +3,7 @@ FROM python:latest
 # Copy contents into image
 COPY . . 
 # Install pip dependencies from requirements
-RUN pip install -r requirements.txt
+RUN pip install -r Task1/requirements.txt
 # Set YOUR_NAME environment variable
 ENV YOUR_NAME QA
 # Expose the correct port
