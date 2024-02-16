@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'python-docker'
-        }
-    }
+    agent any
     stages {
         stage('Clean Up'){
             steps{
