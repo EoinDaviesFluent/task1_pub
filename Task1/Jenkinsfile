@@ -13,11 +13,7 @@ pipeline {
                 sh "sh run build.sh"
             }
         }
-        stage('Clean Up'){
-            steps{
-                sh "echo Cleaning up"
-            }
-        }
+        
         stage('Run Python Script') {
             steps {
                 sh 'python dockerfileexercise/Task1/app.py'
