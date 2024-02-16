@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clean Up'){
             steps{
-                sh "echo 'Cleaning up'"
+                sh "echo Cleaning up"
                 sh "docker rm -f $(docker ps -aq) || true"
                 sh "docker create network || true"
             }
