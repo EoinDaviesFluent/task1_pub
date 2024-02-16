@@ -1,13 +1,15 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'my-jenkins-python'
+        }
+    }
     stages {
         stage('Clean Up'){
             steps{
                 sh "echo Cleaning up"
             }
         }
-        
-       
         stage('Run Python Script') {
             steps {
                 sh 'python dockerfileexercise/Task1/app.py'
