@@ -4,16 +4,10 @@ pipeline {
         stage('Clean Up'){
             steps{
                 sh "echo Cleaning up"
-                sh "docker rm -f $(docker ps -aq) || true"
-                sh "docker create network || true"
             }
         }
         
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main', url: 'https://gitlab.com/Reece-Elder/dockerfileexercise.git'
-            }
-        }
+       
         stage('Run Python Script') {
             steps {
                 sh 'python dockerfileexercise/Task1/app.py'
