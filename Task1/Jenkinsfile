@@ -1,6 +1,13 @@
 pipeline {
     agent any
     stages {
+
+        stage('Clean Up'){
+            steps{
+                sh "echo Cleaning up"
+            }
+        }
+        
         stage('Build'){
             steps{
                 sh "run build.sh"
