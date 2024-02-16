@@ -10,7 +10,7 @@ pipeline {
         
         stage('Build'){
             steps{
-                sh "run build.sh"
+                sh "sh run build.sh"
             }
         }
         stage('Clean Up'){
