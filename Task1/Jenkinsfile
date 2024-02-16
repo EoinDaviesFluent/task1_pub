@@ -5,7 +5,7 @@ pipeline {
         stage('Clean Up'){
             steps{
                 sh "echo Cleaning up"
-                sh "sh ls -a"
+                sh "ls -a"
             }
         }
         
