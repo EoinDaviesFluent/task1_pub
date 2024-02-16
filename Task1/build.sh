@@ -1,2 +1,2 @@
-docker build -t flask-app .
+docker build -t flask-app Task1/Dockerfile
 docker build -t nginx -f Task1/Dockerfile.nginx .
