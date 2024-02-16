@@ -1,2 +1,2 @@
-docker build -t flask-app -f ./Dockerfile
-docker build -t nginx -f ./nginx.conf
+docker build -t flask-app .
+docker build -t nginx -f Task1/nginx.conf
