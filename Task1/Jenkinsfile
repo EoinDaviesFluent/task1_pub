@@ -11,13 +11,13 @@ pipeline {
         
         stage('Build'){
             steps{
-                sh "sh Task1/build.sh"
+                sh "sh build.sh"
             }
         }
         
         stage('Run Python Script') {
             steps {
-                sh 'sh Task1/deploy.sh'
+                sh 'sh deploy.sh'
             }
         }
     }
